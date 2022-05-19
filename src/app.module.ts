@@ -18,7 +18,7 @@ import { DatabaseModule } from './database/database.module';
             })
         }),
         GraphQLModule.forRoot<ApolloDriverConfig>({
-            autoSchemaFile: true,
+            autoSchemaFile: 'schema.graphql',
             driver: ApolloDriver,
         }),
         UsersModule,

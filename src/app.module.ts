@@ -14,7 +14,7 @@ import { DatabaseModule } from './database/database.module';
             isGlobal: true,
             validationSchema: Joi.object({
                 PORT: Joi.number().required(),
-                DB_URI: Joi.string().required(),
+                DATABASE_URL: Joi.string().required(),
             })
         }),
         GraphQLModule.forRoot<ApolloDriverConfig>({
